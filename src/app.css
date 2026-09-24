@@ -1,0 +1,26 @@
+:root {
+  /* Machined aluminum, graphite, and layout-fluid blue. */
+  --bg: #e4e7ea;
+  --panel: #f3f5f6;
+  --ink: #1c2024;
+  --muted: #5b646c;
+  --line: #c5cbd0;
+  --dykem: #2440b3;
+  --dykem-soft: #dfe4f7;
+  --warn: #8a4f00;
+  --warn-soft: #fbf0dd;
+  --radius: 6px;
+  font-family: 'Archivo', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  font-size: 15px;
+  line-height: 1.45;
+  color: var(--ink);
+  background: var(--bg);
+  font-variant-numeric: tabular-nums;
+}
+* { box-sizing: border-box; }
+html, body, #app { height: 100%; margin: 0; }
+button, input, select { font: inherit; color: inherit; }
+:focus-visible { outline: 2px solid var(--dykem); outline-offset: 2px; }
+@media (prefers-reduced-motion: reduce) {
+  * { transition: none !important; animation: none !important; }
+}
